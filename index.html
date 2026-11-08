@@ -3,117 +3,96 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mr-Babuu Gaming Pro</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MRBABU FF PANEL</title>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #080808;
-  color: white;
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
-
-header {
-  text-align: center;
-  padding: 25px 10px;
-  color: #ff2525;
-  font-size: 27px;
-  font-weight: bold;
-  text-shadow: 0 0 15px red;
-}
-
-.subtitle {
-  text-align: center;
-  color: #aaa;
-  margin-bottom: 25px;
-}
-
-.card {
-  background: #171717;
-  border: 1px solid #ff2525;
-  border-radius: 14px;
-  padding: 20px;
-  margin-bottom: 16px;
-  box-shadow: 0 0 10px #ff252533;
-}
-
-.card h2 {
-  color: #ff3333;
-  margin-bottom: 12px;
-}
-
-button {
-  background: #ff2525;
-  color: white;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 8px;
-  margin-top: 12px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:active {
-  background: #aa0000;
-}
-
-footer {
-  text-align: center;
-  color: #777;
-  margin-top: 30px;
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080c0a;color:#fff;font-family:Arial,sans-serif}
+header{background:#111b15;padding:20px;text-align:center;border-bottom:2px solid #39ff70}
+header h1{color:#39ff70;font-size:27px}
+header p{color:#aaa;font-size:12px;margin-top:7px}
+main{max-width:650px;margin:25px auto;padding:15px}
+.login,.dashboard{background:#121b15;border:1px solid #284b32;border-radius:15px;padding:22px}
+h2{color:#39ff70;margin-bottom:20px}
+input{width:100%;padding:14px;margin:9px 0;background:#080c0a;border:1px solid #31523b;border-radius:8px;color:white}
+button{background:#39ff70;color:#071009;border:0;padding:13px;border-radius:8px;font-weight:bold;cursor:pointer}
+.login button{width:100%;margin-top:12px}
+.feature{background:#0b120e;border:1px solid #263c2c;padding:17px;border-radius:10px;margin:12px 0;display:flex;justify-content:space-between;align-items:center}
+.feature h3{font-size:15px}
+.feature p{font-size:11px;color:#999;margin-top:5px}
+.tag{font-size:10px;color:#39ff70}
+.note{font-size:12px;color:#aaa;line-height:1.7;margin-top:18px}
+.hidden{display:none}
+.logout{margin-top:20px;width:100%}
+footer{text-align:center;color:#777;font-size:12px;padding:25px}
 </style>
 </head>
-
 <body>
+<header>
+<h1>👑 MRBABU FF</h1>
+<p>OFFICIAL GAMING PANEL</p>
+</header>
 
-<header>🔥 MR-BABUU 🔥</header>
-
-<p class="subtitle">FREE FIRE MAX GAMING PRO</p>
-
-<div class="card">
-  <h2>🎯 Sensitivity Settings</h2>
-  <p>Device: OPPO A9 2020</p>
-  <p>RAM: 4GB</p>
-  <button onclick="alert('Sensitivity Guide Coming Soon!')">
-    Open Settings
-  </button>
+<main>
+<div class="login" id="login">
+<h2>USER LOGIN</h2>
+<input id="username" placeholder="Enter Username">
+<input id="password" type="password" placeholder="Enter Password">
+<button onclick="login()">LOGIN NOW</button>
+<p class="note">Demo interface only. Secure account authentication requires a backend.</p>
 </div>
 
-<div class="card">
-  <h2>🔥 Headshot Settings</h2>
-  <p>Headshot sensitivity guide</p>
-  <button onclick="alert('Headshot Guide Coming Soon!')">
-    View Guide
-  </button>
+<div class="dashboard hidden" id="dashboard">
+<h2>WELCOME TO MRBABU 🔥</h2>
+<p style="color:#aaa;margin-bottom:20px">Gaming Dashboard</p>
+
+<div class="feature">
+<div><h3>🎯 Headshot</h3><p>Headshot practice section</p></div>
+<span class="tag">PRACTICE</span>
 </div>
 
-<div class="card">
-  <h2>🎮 Auto Aim Lock</h2>
-  <p>Custom control layout guide</p>
-  <button onclick="alert('HUD Guide Coming Soon!')">
-    Open HUD
-  </button>
+<div class="feature">
+<div><h3>🤖 Aim Bot</h3><p>Aim training information</p></div>
+<span class="tag">INFO</span>
 </div>
 
-<div class="card">
-  <h2>🔒 Aim Settings</h2>
-  <p>Legitimate in-game aim settings</p>
-  <button onclick="alert('Aim Guide Coming Soon!')">
-    View Aim Guide
-  </button>
+<div class="feature">
+<div><h3>🔒 Aim Lock</h3><p>Aim control learning</p></div>
+<span class="tag">INFO</span>
 </div>
 
-<footer>
-  MR-BABUU GAMING PRO © 2026
-</footer>
+<div class="feature">
+<div><h3>💥 Auto Headshot</h3><p>Headshot technique guide</p></div>
+<span class="tag">GUIDE</span>
+</div>
 
+<div class="feature">
+<div><h3>👁️ ESP Line</h3><p>Game awareness guide</p></div>
+<span class="tag">GUIDE</span>
+</div>
+
+<p class="note">
+This is a visual gaming dashboard. It does not modify Free Fire, automate aiming, reveal enemy locations or provide cheats.
+</p>
+<button class="logout" onclick="logout()">LOGOUT</button>
+</div>
+</main>
+
+<footer>© 2026 MRBABU FF PANEL | Made with ❤️</footer>
+
+<script>
+function login(){
+let u=document.getElementById('username').value.trim();
+let p=document.getElementById('password').value;
+if(!u||!p){alert('Enter username and password');return}
+document.getElementById('login').classList.add('hidden');
+document.getElementById('dashboard').classList.remove('hidden');
+}
+function logout(){
+document.getElementById('dashboard').classList.add('hidden');
+document.getElementById('login').classList.remove('hidden');
+document.getElementById('password').value='';
+}
+</script>
 </body>
 </html>
